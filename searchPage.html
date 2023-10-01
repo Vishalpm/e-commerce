@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+
+    <!-- Font Awosome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Font Faimly Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+
+    <!-- CSS file link -->
+
+
+    <!-- // Header CSS file-->
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/general.css">
+    <link rel="stylesheet" href="./assets/css/searchPage.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
+
+
+
+</head>
+
+<body>
+    <!-- ******Header Section Start****** -->
+    <div class="overlay"></div>
+    <div id="headerPartInSearch">
+
+    </div>
+
+
+    <!-- ******Header Section End****** -->
+
+
+
+
+    <!-- Search Page Start here -->
+
+    <section class="search">
+        <section id="home">
+            <div class="home_bar container fw3">
+                <i class="fa-solid fa-house"></i>
+                <i class="fa-solid fa-arrow-right"></i>
+                <div id="home_search">
+                    <p>Search</p>
+                </div>
+            </div>
+        </section>
+        <div class="searchCamera container">
+            <h1>Search - <span id="searchname">camera</span></h1>
+            <hr class="search_camera_hr">
+        </div>
+        <div class="all_hr_line" id="search_hr">
+            <hr>
+        </div>
+        <div class="container search_part">
+            <div class="search_left " id="search_left">
+                <div class="search_left_sub1">
+                    <div class="search_left_filter">
+                        <h3>Filter</h3>
+                        <button><i class="fa-solid fa-circle-xmark"></i> Clear</button>
+                    </div>
+                    <div id="filter_hr">
+                        <hr class="search_hr">
+                    </div>
+                    <div class="search_left_price minusPlus_bar search_minus">
+                        <h3>Price</h3>
+                        <span><i class="fa-sharp fa-solid fa-minus"></i></span>
+                    </div>
+
+                    <div class="sub_bar price_bar">
+                        <div class="search_left_meter">
+                            <input type="range" class="points" name="points" min="0" max="100" value="0">
+                            <input type="range" class="points" name="points" min="0" max="100" value="100">
+
+                        </div>
+                        <div class="search_left_amount">
+                            <div><button id="amount_btn1">70</button> $</div>
+                            <div><button id="amount_btn2">1718</button> $</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="all_hr_line">
+                    <hr>
+                </div>
+                <div class="search_left_sub2">
+                    <div class="search_left_price minusPlus_bar search_minus">
+                        <h3>Availability</h3>
+                        <span><i class="fa-sharp fa-solid fa-minus"></i></span>
+                    </div>
+
+                    <div class="checkbox_bar sub_bar">
+                        <div class="checkbox_bar_1 stock">
+                            <input type="checkbox">
+                            <label class="fw4">In Stock</label>
+                        </div>
+                        <div class="checkbox_bar_2 stock">
+                            <input type="checkbox">
+                            <label class="fw4">Out of Stock</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="all_hr_line">
+                    <hr>
+                </div>
+
+                <div class="search_left_sub3">
+                    <div class="search_left_price minusPlus_bar search_minus">
+                        <h3>Subcategories</h3>
+                        <span><i class="fa-sharp fa-solid fa-minus"></i></span>
+                    </div>
+
+                    <div class="electronics padd_png sub_bar">
+                        <div class="electronics_img">
+                            <img src="./assets/images/electronics.avif" alt="">
+                        </div>
+
+                        <p>Electronics</p>
+                    </div>
+                </div>
+
+                <div class="all_hr_line">
+                    <hr>
+                </div>
+
+                <div class="search_left_sub4">
+                    <div class="search_left_brands minusPlus_bar search_minus">
+                        <h3>Brands</h3>
+                        <span><i class="fa-sharp fa-solid fa-minus"></i></span>
+                    </div>
+
+                    <div class="brands_png padd_png sub_bar">
+                        <div class="electronics_img">
+                            <img src="./assets/images/apple.png" alt="">
+                        </div>
+
+                        <div class="electronics_img">
+                            <img src="./assets/images/cannon.png" alt="">
+                        </div>
+
+                        <div class="electronics_img">
+                            <img src="./assets/images/nikon.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="all_hr_line">
+                    <hr>
+                </div>
+
+                <div class="search_left_select minusPlus_bar search_plus">
+                    <h3>Select</h3>
+                    <span><i id="serch_plus" class="fa-solid fa-plus"></i></span>
+
+                </div>
+                <div class="sub_bar"></div>
+
+                <div class="all_hr_line">
+                    <hr>
+                </div>
+
+                <div class="search_left_Radio minusPlus_bar search_plus">
+                    <h3>Radio</h3>
+                    <span><i id="serch_plus" class="fa-solid fa-plus"></i></span>
+                </div>
+
+                <div class="sub_bar"></div>
+
+                <div class="all_hr_line">
+                    <hr>
+                </div>
+
+                <div class="search_left_color minusPlus_bar search_minus">
+                    <h3>Color</h3>
+                    <span><i id="serch_plus" class="fa-solid fa-plus"></i></span>
+                </div>
+
+                <div class="brands_png padd_png sub_bar">
+                    <div class="electronics_img" id="cyan_box">
+
+                    </div>
+
+                    <div class="electronics_img" id="voilet_box">
+
+                    </div>
+
+                    <div class="electronics_img" id="slatee_box">
+
+                    </div>
+                    <div class="electronics_img" id="red_box">
+
+                    </div>
+                </div>
+
+                <div class="all_hr_line">
+                    <hr>
+                </div>
+
+                <div class="search_left_clockspeed minusPlus_bar search_plus">
+                    <h3 class="fw5">Clockspeed</h3>
+                    <span><i id="serch_plus" class="fa-solid fa-plus"></i></span>
+                </div>
+                <div class="sub_bar"></div>
+                <div class="all_hr_line">
+                    <hr>
+                </div>
+
+                <div class="search_left_test1 minusPlus_bar search_plus">
+                    <h3>Test 1</h3>
+                    <span><i id="serch_plus" class="fa-solid fa-plus"></i></span>
+                </div>
+                <div class="sub_bar"></div>
+                <div class="all_hr_line">
+                    <hr>
+                </div>
+
+                <div class="search_left_cores minusPlus_bar search_plus">
+                    <h3>No. of Cores</h3>
+                    <span><i id="serch_plus" class="fa-solid fa-plus"></i></span>
+                </div>
+
+                <div class="sub_bar"></div>
+
+                <div class="all_hr_line">
+                    <hr>
+                </div>
+
+                <div class="search_left_style minusPlus_bar search_plus">
+                    <h3>Style</h3>
+                    <span><i id="serch_plus" class="fa-solid fa-plus"></i></span>
+                </div>
+
+                <div class="sub_bar"></div>
+
+            </div>
+
+
+            <div class="search_right_grid">
+                <div class="search_right_sub1">
+                    <div class="input_bar">
+                        <input class="camera" type="text" placeholder="camera">
+                        <input class="allcategories" type="text" placeholder="All Categories">
+                    </div>
+
+                    <div class="checkbox_bar">
+                        <div class="checkbox_bar_1">
+                            <input type="checkbox">
+                            <label class="fw4">Search in Subcategories</label>
+                        </div>
+                        <div class="checkbox_bar_2">
+                            <input type="checkbox">
+                            <label class="fw4">Search in Product descriptions</label>
+                        </div>
+                    </div>
+
+                    <button class="search_btn">SEARCH</button>
+
+                    <div id="criteria_text">
+                        <p>Products meeting the search criteria</p>
+                        <hr class="search_hr">
+                    </div>
+
+                </div>
+
+                <div class="all_hr_line">
+                    <hr>
+                </div>
+
+                <div class="search_right_sub2" id="hideshowgridbtn">
+                    <div class="search_description1">
+                        <div class="search_description1_l1">
+                            <button id="showListbtn"><i class="fa-solid fa-bars"></i></button>
+                            &nbsp;
+                            <button id="showGridbtn"><i class="fa-solid fa-list-ul"></i></button>
+                        </div>
+                        <div class="search_description1_l2">
+                            <i id="search_compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                            <span>Product Compare</span>
+                        </div>
+                    </div>
+                    <div class="search_description2">
+                        <div class="search_description2_r1">
+                            <!-- Sort By:
+                            <input  type="text" placeholder="Default"> -->
+                            <label class="choose" for="short">Short By:</label>
+
+                            <select name="short" id="r1">
+                                <option value="volvo">Default</option>
+                                <option value="saab">Default</option>
+                                <option value="mercedes">Default</option>
+                                <option value="audi">Default</option>
+                            </select>
+
+                        </div>
+                        <div class="search_description2_r2">
+                            <!-- show:
+                            <input  type="text"> -->
+                            <label class="choose" for="choose_number">Show: </label>
+
+                            <select name="choose_number" id="r2">
+                                <option value="2">12</option>
+                                <option value="8">8</option>
+                                <option value="6">6</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="all_hr_line">
+                    <hr>
+                </div>
+
+                <!-- /////////////Grid View Start here //////////////////-->
+                <div class="search_right_sub3" id="showGrid">
+                    <!-- <div class="about2_sub2_sub2 "> -->
+
+                    <!-- </div> -->
+                </div>
+                <!-- /////////////Grid View End here //////////////////-->
+
+                <!-- /////////////List View Start here //////////////////-->
+                <div class="search_right_listview" id="showList">
+                </div>
+                <!-- /////////////List View End here //////////////////-->
+
+                <div class="all_hr_line" id="hideline">
+                    <hr>
+                </div>
+
+                <div class="end_list" id="end_list">You have reached the end of list.</div>
+                <button class="hidesearchleft" id="hidecontinue">continue</button>
+
+
+
+                <div class="extraheight"></div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+    <!-- Search Page End here -->
+
+    <section id="about_8">
+        <section class="about8 container">
+            <div class="about8_sub1">
+                <div>
+                    <span>RECENTLY VIEWED</span>
+                    <hr id="recent_hr">
+                </div>
+                <span id="most_color">MOST VIEWED</span>
+            </div>
+            <div class="about8_sub2">
+                <div class="about8_card" id="recentlyviewedcard_width">
+                    <div class="about8_card_sub1">
+                        <img src="./assets/images/campng.png" alt="">
+                    </div>
+                    <div class="about8_card_sub2">
+                        <div>
+                            <p>Leica Digital Camera</p>
+                            <p>$1717.49</p>
+                        </div>
+                        <p class="order">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Footer Section Start-->
+    <div id="searchFooter">
+    </div>
+    <!-- Footer Section End -->
+
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+    <!-- <script type="text/javascript" src="./assets/js/login.js" ></script> -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+
+</html>
